@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+i need my website exect like this just in our team where i have social media logo i want to add whatsapp logo add this muber +4670030728 <!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -134,15 +134,92 @@
                     <b>Shoaib Amanat</b>. We deliver high-quality digital solutions including website 
                     development, mobile apps, IT consultancy, cloud server setup, computer networking, 
                     and digital marketing.
+                    <br><br>
+                    We focus on modern, scalable, and secure solutions that help individuals and businesses 
+                    grow in the digital world.
                 </p>
+                <a href="#"><button class="btn">Read More</button></a>
             </div>
         </div>
     </section>
 
-    <!-- TEAM -->
+    <!-- SERVICES -->
+    <div class="pt-5 pb-5" style="background-color:#f2f2f2;">
+        <div class="container">
+            <div class="row">
+                <div class="section-head col-sm-12" id="service">
+                    <h1>Our Services</h1>
+                    <p>Delivering high-quality digital services and IT solutions to help your business grow.</p>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+                        <span class="icon feature_box_col_one">
+                            <i class="fa fa-laptop"></i>
+                        </span>
+                        <h6>Web Development</h6>
+                        <p>Custom, responsive and modern websites designed to help your online presence stand out.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+                        <span class="icon feature_box_col_two">
+                            <i class="fa fa-android"></i>
+                        </span>
+                        <h6>Mobile App Development</h6>
+                        <p>Android and iOS applications with high performance and seamless user experience.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6">
+                    <div class="item">
+                        <span class="icon feature_box_col_three">
+                            <i class="fa fa-cloud"></i>
+                        </span>
+                        <h6>Cloud Solutions</h6>
+                        <p>Cloud server deployment, configuration and management for secure business operations.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- COUNTERS -->
+    <section class="counters">
+        <div class="container">
+            <div>
+                <i class="far fa-clock fa-4x"></i>
+                <div class="counter" data-target="100">0</div>
+                <h3>Working Hours</h3>
+            </div>
+            <div>
+                <i class="fas fa-gift fa-4x"></i>
+                <div class="counter" data-target="20">0</div>
+                <h3>Completed Projects</h3>
+            </div>
+            <div>
+                <i class="fas fa-users fa-4x"></i>
+                <div class="counter" data-target="5">0</div>
+                <h3>Happy Clients</h3>
+            </div>
+            <div>
+                <i class="fas fa-award fa-4x"></i>
+                <div class="counter" data-target="5">0</div>
+                <h3>Awards Received</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- UPDATED TEAM SECTION WITH YOUR PICTURE -->
     <section class="team-section py-5" id="team">
         <div class="container">
             <h1 class="heading text-center mb-4">Our Team</h1>
+            <p class="text-center mb-5" style="font-size: 17px;">
+                A dedicated professional powering complete IT and cloud solutions.
+            </p>
+
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <div class="team-card shadow-sm p-4 text-center">
@@ -151,21 +228,127 @@
                         </div>
                         <h3 class="team-name mb-1">Shoaib Amanat</h3>
                         <p class="team-role mb-3">Founder & Full Stack Developer</p>
-
-                        <!-- WhatsApp icon added (ONLY CHANGE) -->
                         <div class="team-social">
-                            <a href="https://wa.me/4670030728" target="_blank" class="fab fa-whatsapp"></a>
                             <a href="#" class="fab fa-facebook-f"></a>
                             <a href="#" class="fab fa-twitter"></a>
                             <a href="#" class="fab fa-instagram"></a>
                             <a href="#" class="fab fa-linkedin"></a>
                         </div>
-
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
+
+    <!-- UPDATED CONTACT SECTION -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h1 class="heading text-center mb-4">Get in Touch</h1>
+
+            <div class="row">
+
+                <!-- Map -->
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="contact-map shadow-sm rounded overflow-hidden">
+                        <iframe 
+                            src="https://www.google.com/maps?q=13666+Vendelsö,+Stockholm,+Sweden&output=embed" 
+                            width="100%" height="350" style="border:0;" allowfullscreen loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="contact-form shadow-sm p-4 rounded bg-white">
+                        <form action="./contactme.php" method="POST" autocomplete="off">
+
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your contact number" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Write your message" required></textarea>
+                            </div>
+
+                            <button type="submit" name="submit" class="btn btn-primary btn-block py-2">
+                                Send Message
+                            </button>
+
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#about">About us</a></li>
+                            <li><a href="#service">Our services</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            VENDELSÖMALMSVÄGEN 247 LGH 1504<br>
+                            136 66 Vendelsö, Stockholm<br>
+                            Sweden<br><br>
+                            <strong>WhatsApp:</strong> +46 700 307 289<br>
+                            <strong>Email:</strong> info@nordictechcloud.se
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-newsletter">
+                        <h4>Subscription</h4>
+                        <p>Subscribe to get our latest updates and service offers.</p>
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center mt-3">
+            <p style="color:#fff;">© 2025 Nordic Tech & Cloud Solution. All Rights Reserved.</p>
+        </div>
+    </div>
 
 </body>
 </html>
