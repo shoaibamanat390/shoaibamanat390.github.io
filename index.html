@@ -14,7 +14,8 @@
     <style>
         .contact-section {
             background: #f8f9fa;
-            padding: 60px 0;
+            padding-top: 60px;
+            padding-bottom: 60px;
         }
         .contact-map iframe {
             border-radius: 8px;
@@ -24,15 +25,33 @@
         .contact-form {
             background: #ffffff;
             border-radius: 10px;
+            transition: 0.3s ease;
         }
+        .contact-form:hover {
+            transform: translateY(-3px);
+        }
+        .contact-form .form-control {
+            height: 45px;
+            border-radius: 6px;
+        }
+        .contact-form textarea {
+            border-radius: 6px;
+        }
+        .contact-form button {
+            font-size: 16px;
+            border-radius: 6px;
+        }
+
         .team-section {
             background: #fafafa;
-            padding: 60px 0;
+            padding-top: 60px;
+            padding-bottom: 60px;
         }
         .team-card {
             background: #fff;
             border-radius: 15px;
-            transition: 0.3s;
+            transition: 0.3s ease;
+            margin-bottom: 30px;
         }
         .team-card:hover {
             transform: translateY(-6px);
@@ -41,9 +60,9 @@
         .team-img-wrapper {
             width: 150px;
             height: 150px;
-            margin: auto;
-            border-radius: 50%;
+            margin: 0 auto 15px;
             overflow: hidden;
+            border-radius: 50%;
             border: 5px solid #007bff33;
         }
         .team-img {
@@ -51,40 +70,33 @@
             height: 100%;
             object-fit: cover;
         }
+        .team-name {
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .team-role {
+            font-size: 15px;
+            color: #666;
+        }
         .team-social a {
+            display: inline-block;
             margin: 0 8px;
-            font-size: 20px;
+            font-size: 18px;
             color: #007bff;
+            transition: 0.3s ease;
+        }
+        .team-social a:hover {
+            color: #0056b3;
         }
         .team-social a.fa-whatsapp {
             color: #25D366;
-        }
-
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 25px;
-            right: 25px;
-            background-color: #25D366;
-            color: #fff;
-            width: 55px;
-            height: 55px;
-            border-radius: 50%;
-            text-align: center;
-            font-size: 28px;
-            line-height: 55px;
-            z-index: 999;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-        }
-        .whatsapp-float:hover {
-            color: #fff;
-            background-color: #1ebe5d;
         }
     </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header class="header">
     <a href="#" class="logo"><img src="./images/image.png" alt="logo"></a>
     <div class="fas fa-bars"></div>
@@ -93,40 +105,60 @@
             <li><a href="#home">home</a></li>
             <li><a href="#about">about</a></li>
             <li><a href="#service">services</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
             <li><a href="#team">team</a></li>
+            <li><a href="careers.html">career</a></li>
             <li><a href="#contact">contact</a></li>
+            <li><a href="#faq">FAQ</a></li>
         </ul>
     </nav>
 </header>
 
+<!-- HOME -->
 <section id="home" class="home">
     <h1>Nordic Tech & Cloud Solution</h1>
     <h2>Your Trusted Partner for IT, Cloud & Digital Transformation</h2>
+    <div class="wave wave1"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
 </section>
 
+<!-- ABOUT -->
 <section id="about" class="about">
     <h1 class="heading">About Us</h1>
-    <p class="text-center">
-        Sweden-based IT company delivering modern digital and cloud solutions.
-    </p>
+    <div class="row">
+        <div class="content">
+            <h3>Empowering Businesses with Nordic Innovation</h3>
+            <p>
+                Nordic Tech & Cloud Solution is a Sweden-based IT company founded and operated by 
+                <b>Shoaib Amanat</b>. We deliver high-quality digital solutions including website 
+                development, mobile apps, IT consultancy, cloud server setup, computer networking, 
+                and digital marketing.
+            </p>
+        </div>
+    </div>
 </section>
 
-<section class="team-section" id="team">
-    <div class="container text-center">
-        <h1 class="heading mb-4">Our Team</h1>
+<!-- TEAM -->
+<section class="team-section py-5" id="team">
+    <div class="container">
+        <h1 class="heading text-center mb-4">Our Team</h1>
+
         <div class="row justify-content-center">
-            <div class="col-lg-4">
-                <div class="team-card p-4">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="team-card shadow-sm p-4 text-center">
                     <div class="team-img-wrapper mb-3">
                         <img src="./images/team-shoaib.png" class="team-img" alt="Shoaib Amanat">
                     </div>
-                    <h3>Shoaib Amanat</h3>
-                    <p>Founder & Full Stack Developer</p>
+                    <h3 class="team-name mb-1">Shoaib Amanat</h3>
+                    <p class="team-role mb-3">Founder & Full Stack Developer</p>
                     <div class="team-social">
+                        <!-- WhatsApp added -->
                         <a href="https://wa.me/46700307289" target="_blank" class="fab fa-whatsapp" title="Chat on WhatsApp"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
                         <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
                         <a href="#" class="fab fa-instagram"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
                     </div>
                 </div>
             </div>
@@ -134,45 +166,61 @@
     </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact" class="contact-section">
     <div class="container">
         <h1 class="heading text-center mb-4">Get in Touch</h1>
+
         <div class="row">
-            <div class="col-lg-6 mb-4">
-                <iframe 
-                    src="https://www.google.com/maps?q=13666+Vendelsö,+Stockholm,+Sweden&output=embed"
-                    style="border:0;" allowfullscreen loading="lazy">
-                </iframe>
+            <div class="col-lg-6 col-md-12 mb-4">
+                <div class="contact-map shadow-sm rounded overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps?q=13666+Vendelsö,+Stockholm,+Sweden&output=embed"
+                        style="border:0;" allowfullscreen loading="lazy">
+                    </iframe>
+                </div>
             </div>
-            <div class="col-lg-6">
-                <form class="contact-form p-4" action="./contactme.php" method="POST">
-                    <input type="text" class="form-control mb-3" placeholder="Your Name" required>
-                    <input type="email" class="form-control mb-3" placeholder="Your Email" required>
-                    <textarea class="form-control mb-3" rows="5" placeholder="Message"></textarea>
-                    <button class="btn btn-primary btn-block">Send Message</button>
-                </form>
+
+            <div class="col-lg-6 col-md-12">
+                <div class="contact-form shadow-sm p-4 rounded bg-white">
+                    <form action="./contactme.php" method="POST">
+                        <input type="text" class="form-control mb-3" placeholder="Full Name" required>
+                        <input type="email" class="form-control mb-3" placeholder="Email" required>
+                        <textarea class="form-control mb-3" rows="5" placeholder="Message" required></textarea>
+                        <button class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<footer class="footer bg-dark text-white p-4">
-    <div class="container text-center">
-        <p>
-            <strong>WhatsApp:</strong>
-            <a href="https://wa.me/46700307289" target="_blank" style="color:#25D366;">
-                +46 700 307 289
-            </a><br>
-            <strong>Email:</strong> info@nordictechcloud.se
-        </p>
-        <p>© 2025 Nordic Tech & Cloud Solution</p>
-    </div>
-</footer>
+<!-- FOOTER -->
+<div class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
 
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/46700307289" target="_blank" class="whatsapp-float">
-    <i class="fab fa-whatsapp"></i>
-</a>
+                <div class="col-lg-3 footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>
+                        Sweden<br><br>
+                        <strong>WhatsApp:</strong>
+                        <a href="https://wa.me/46700307289" target="_blank">
+                            +46 700 307 289
+                        </a><br>
+                        <strong>Email:</strong> info@nordictechcloud.se
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center mt-3">
+        <p style="color:#fff;">© 2025 Nordic Tech & Cloud Solution. All Rights Reserved.</p>
+    </div>
+</div>
 
 </body>
 </html>
